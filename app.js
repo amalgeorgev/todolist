@@ -48,7 +48,7 @@ let day = date.getDate();   //executes the code from date.js file
 
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.get("/", async function (req, res) {    //for root site
